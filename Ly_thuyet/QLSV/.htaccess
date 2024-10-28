@@ -1,0 +1,12 @@
+# Sử dụng file .htaccess (Apache)* mã hóa url
+# Bật chế độ viết lại
+RewriteEngine On
+
+# Đặt đường dẫn cơ sở
+RewriteBase /QLSV/
+
+# Ẩn phần mở rộng .php cho trang Login
+RewriteRule ^Login$ Login.php [L]
+
+# Ẩn phần mở rộng .php cho trang lop
+RewriteRule ^lophoc$ lophoc.php [L]
